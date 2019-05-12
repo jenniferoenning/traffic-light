@@ -1,0 +1,84 @@
+int R1 = 8;
+int G1 = 10;
+int Y1 = 9;
+
+int R2 = 13;
+int Y2 = 12;
+int G2 = 11;
+
+int R3 = 5;
+int Y3 = 6;
+int G3 = 7;
+
+int G4 = 4;
+int R4 = 2;
+int Y4 = 3;
+
+void setup() {
+  pinMode(R1, OUTPUT);
+  pinMode(Y1, OUTPUT);
+  pinMode(G1, OUTPUT);
+  
+  pinMode(R2, OUTPUT);
+  pinMode(Y2, OUTPUT);
+  pinMode(G2, OUTPUT);
+  
+  pinMode(R3, OUTPUT);
+  pinMode(Y3, OUTPUT);
+  pinMode(G3, OUTPUT);
+  
+  pinMode(R4, OUTPUT);
+  pinMode(Y4, OUTPUT);
+  pinMode(G4, OUTPUT);
+}
+
+
+void loop()  {
+  digitalWrite(G1,HIGH);
+  digitalWrite(R2,HIGH);
+  digitalWrite(R3,HIGH);
+  digitalWrite(R4,HIGH);
+  delay(8000);
+  digitalWrite(G1,LOW);     
+   
+  digitalWrite(Y1,HIGH);
+  delay(2000);
+  digitalWrite(R2,LOW);
+    
+   
+  digitalWrite(G2,HIGH);
+  digitalWrite(R3,HIGH);
+  digitalWrite(R4,HIGH);
+  digitalWrite(R1,HIGH);
+  delay(8000);
+  digitalWrite(G2,LOW);     
+   
+  digitalWrite(Y2,HIGH);
+  delay(2000);
+  digitalWrite(Y2,LOW);
+  
+  digitalWrite(R2,LOW);
+  digitalWrite(R3,LOW);
+  digitalWrite(G3,HIGH);
+  digitalWrite(R1,HIGH);
+  digitalWrite(R2,HIGH);
+  digitalWrite(R4,HIGH);
+  delay(8000);
+  digitalWrite(G3,LOW);     
+   
+  digitalWrite(Y3,HIGH);
+  delay(2000);
+  digitalWrite(Y3,LOW);
+  
+  digitalWrite(R4,LOW);
+  digitalWrite(G4,HIGH);
+  digitalWrite(R1,HIGH);
+  digitalWrite(R2,HIGH);
+  digitalWrite(R3,HIGH);
+  delay(8000);
+  digitalWrite(G4,LOW);     
+   
+  digitalWrite(Y4,HIGH);
+  delay(2000);
+  digitalWrite(Y4,LOW);
+}
